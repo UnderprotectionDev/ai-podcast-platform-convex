@@ -156,11 +156,11 @@ export default function CreatePodcast() {
             <GeneratePodcast
               setAudioStorageId={setAudioStorageId}
               setAudio={setAudioUrl}
-              setAudioDuration={setAudioDuration}
+              voiceType={voiceType!}
               audio={audioUrl}
-              voiceType={voiceType}
               voicePrompt={voicePrompt}
               setVoicePrompt={setVoicePrompt}
+              setAudioDuration={setAudioDuration}
             />
 
             <GenerateThumbnail />
