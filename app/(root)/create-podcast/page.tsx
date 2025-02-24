@@ -87,7 +87,7 @@ export default function CreatePodcast() {
                   </FormLabel>
                   <FormControl>
                     <Input
-                      className="input-class focus-visible:ring-orange-1"
+                      className="input-class focus-visible:ring-orange-1 focus-visible:ring-offset-1"
                       placeholder="Pro Podcast"
                       {...field}
                     />
@@ -97,13 +97,13 @@ export default function CreatePodcast() {
               )}
             />
             <div className="flex flex-col gap-2.5">
-              <Label className="text-16 font-bold text-white-1">
+              <Label className="text-16 font-bold text-white-1 focus-visible:ring-orange-1 focus-visible:ring-offset-1">
                 Select AI Voice
               </Label>
               <Select onValueChange={(value) => setVoiceType(value)}>
                 <SelectTrigger
                   className={cn(
-                    "text-16 w-full border-none bg-black-1 text-gray-1"
+                    "text-16 w-full border-none bg-black-1 text-gray-1 focus-visible:ring-orange-1 focus-visible:ring-offset-1"
                   )}
                 >
                   <SelectValue
@@ -111,12 +111,12 @@ export default function CreatePodcast() {
                     className="placeholder:text-gray-1"
                   />
                 </SelectTrigger>
-                <SelectContent className="text-16 border-none bg-black-1 font-bold text-white-1 focus:ring-orange-1">
+                <SelectContent className="text-16 border-none bg-black-1 font-bold text-white-1">
                   {voiceCategories.map((category) => (
                     <SelectItem
                       key={category}
                       value={category}
-                      className="capitalize focus:bg-orange-1"
+                      className="capitalize focus:bg-orange-1 focus-visible:ring-orange-1 focus-visible:ring-offset-1"
                     >
                       {category}
                     </SelectItem>
@@ -142,7 +142,7 @@ export default function CreatePodcast() {
                   </FormLabel>
                   <FormControl>
                     <Textarea
-                      className="input-class focus-visible:ring-orange-1"
+                      className="input-class focus-visible:ring-orange-1 focus-visible:ring-offset-1"
                       placeholder="Write a short podcast description"
                       {...field}
                     />
@@ -153,7 +153,15 @@ export default function CreatePodcast() {
             />
           </div>
           <div className="flex flex-col pt-10">
-            <GeneratePodcast />
+            <GeneratePodcast
+              setAudioStorageId={setAudioStorageId}
+              setAudio={setAudioUrl}
+              setAudioDuration={setAudioDuration}
+              audio={audioUrl}
+              voiceType={voiceType}
+              voicePrompt={voicePrompt}
+              setVoicePrompt={setVoicePrompt}
+            />
 
             <GenerateThumbnail />
 

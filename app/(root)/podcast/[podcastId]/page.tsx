@@ -1,8 +1,8 @@
-type PageProps = {
+interface PageProps {
   params: Promise<{
     podcastId: string;
   }>;
-};
+}
 
 export default async function PodcastPage({ params }: PageProps) {
   const { podcastId } = await params;
