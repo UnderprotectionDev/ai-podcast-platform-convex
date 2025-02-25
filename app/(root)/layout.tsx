@@ -2,6 +2,7 @@ import { LeftSidebar } from "@/components/left-sidebar";
 import { MobileNav } from "@/components/mobile-nav";
 import { RightSidebar } from "@/components/right-sidebar";
 import { Toaster } from "@/components/ui/sonner";
+import { AudioProvider } from "@/app/providers/audio-provider";
 import Image from "next/image";
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
               <MobileNav />
             </div>
             <div className="flex flex-col md:pb-14">
-              {children}
+              <AudioProvider>{children}</AudioProvider>
               <Toaster position="top-center" richColors />
             </div>
           </div>

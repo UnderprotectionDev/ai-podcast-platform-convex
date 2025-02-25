@@ -17,7 +17,7 @@ export default function Home() {
                 key={_id}
                 title={podcastTitle}
                 description={podcastDescription}
-                imageUrl={imageUrl as string}
+                imgUrl={imageUrl as string}
                 podcastId={_id}
               />
             )
