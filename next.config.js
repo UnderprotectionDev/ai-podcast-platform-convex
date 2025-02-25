@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "ceaseless-ocelot-977.convex.cloud",
+        pathname: "/api/storage/**",
+      },
+    ],
   },
 };
 

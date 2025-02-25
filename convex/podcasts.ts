@@ -53,7 +53,6 @@ export const createPodcast = mutation({
   },
 });
 
-// this mutation is required to generate the url after uploading the file to the storage.
 export const getUrl = mutation({
   args: {
     storageId: v.id("_storage"),
@@ -63,7 +62,6 @@ export const getUrl = mutation({
   },
 });
 
-// this query will get all the podcasts based on the voiceType of the podcast , which we are showing in the Similar Podcasts section.
 export const getPodcastByVoiceType = query({
   args: {
     podcastId: v.id("podcasts"),
@@ -83,14 +81,12 @@ export const getPodcastByVoiceType = query({
   },
 });
 
-// this query will get all the podcasts.
 export const getAllPodcasts = query({
   handler: async (ctx) => {
     return await ctx.db.query("podcasts").order("desc").collect();
   },
 });
 
-// this query will get the podcast by the podcastId.
 export const getPodcastById = query({
   args: {
     podcastId: v.id("podcasts"),
@@ -100,7 +96,6 @@ export const getPodcastById = query({
   },
 });
 
-// this query will get the podcasts based on the views of the podcast , which we are showing in the Trending Podcasts section.
 export const getTrendingPodcasts = query({
   handler: async (ctx) => {
     const podcast = await ctx.db.query("podcasts").collect();
@@ -109,7 +104,6 @@ export const getTrendingPodcasts = query({
   },
 });
 
-// this query will get the podcast by the authorId.
 export const getPodcastByAuthorId = query({
   args: {
     authorId: v.string(),
@@ -129,7 +123,6 @@ export const getPodcastByAuthorId = query({
   },
 });
 
-// this query will get the podcast by the search query.
 export const getPodcastBySearch = query({
   args: {
     search: v.string(),
