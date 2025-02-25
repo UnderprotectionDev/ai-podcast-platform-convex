@@ -1,22 +1,22 @@
 import Image from "next/image";
 
 interface PodcastCardProps {
-  podcastId: number;
+  podcastId: string;
   title: string;
   description: string;
-  imgURL: string;
+  imageUrl: string;
 }
 export function PodcastCard({
   podcastId,
   title,
   description,
-  imgURL,
+  imageUrl,
 }: PodcastCardProps) {
   return (
     <div className="cursor-pointer">
       <figure className="flex flex-col gap-2">
         <Image
-          src={imgURL}
+          src={imageUrl}
           width={174}
           height={174}
           alt={title}
