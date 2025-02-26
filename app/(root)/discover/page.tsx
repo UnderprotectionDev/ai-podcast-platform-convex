@@ -1,7 +1,11 @@
-export default function Discover() {
-  return (
-    <div>
-      <h1 className="text-20 font-bold text-white-1">Discover</h1>
-    </div>
-  );
+import DiscoverPage from "./discover-page";
+
+export default async function Discover({
+  searchParams,
+}: {
+  searchParams: Promise<{ search?: string }>;
+}) {
+  const search = (await searchParams).search || "";
+
+  return <DiscoverPage searchQuery={search} />;
 }
