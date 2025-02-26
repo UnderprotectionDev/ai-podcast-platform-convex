@@ -8,7 +8,7 @@ import { LoaderSpinner } from "./loader-spinner";
 import { Button } from "./ui/button";
 import { toast } from "sonner";
 import { PodcastDetailPlayerProps } from "@/types";
-import { useAudio } from "@/app/providers/audio-provider";
+import { useAudio } from "@/providers/audio-provider";
 
 export function PodcastDetailPlayer({
   audioUrl,

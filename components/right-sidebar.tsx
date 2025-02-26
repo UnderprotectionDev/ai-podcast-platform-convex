@@ -9,7 +9,7 @@ import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { useAudio } from "@/app/providers/audio-provider";
+import { useAudio } from "@/providers/audio-provider";
 import { EmblaCarousel } from "./carousel";
 
 export function RightSidebar() {

@@ -2,7 +2,7 @@ import { LeftSidebar } from "@/components/left-sidebar";
 import { MobileNav } from "@/components/mobile-nav";
 import { RightSidebar } from "@/components/right-sidebar";
 import { Toaster } from "@/components/ui/sonner";
-import { AudioProvider } from "@/app/providers/audio-provider";
+import { AudioProvider } from "@/providers/audio-provider";
 import Image from "next/image";
 
 export default function RootLayout({
