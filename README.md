@@ -1,6 +1,6 @@
-# AI Podcast Platform Convex 🚀
-
 <div align="center">
+
+# AI Podcast Platform Convex 🚀
 
 ![Home](/public/project-image/home.png)
 
@@ -9,7 +9,6 @@
 [![Convex](https://img.shields.io/badge/Convex-000000?style=for-the-badge&logo=convex&logoColor=white)](https://www.convex.dev/)
 [![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white)](https://clerk.com/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-000000?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/)
-[![AI SDK](https://img.shields.io/badge/AI_SDK-000000?style=for-the-badge&logo=ai&logoColor=white)](https://sdk.vercel.ai/)
 [![Zod](https://img.shields.io/badge/Zod-3068B7?style=for-the-badge&logo=zod&logoColor=white)](https://zod.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Shadcn/ui](https://img.shields.io/badge/Shadcn/ui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
@@ -89,7 +88,6 @@ Visit [http://localhost:3000](http://localhost:3000) to explore the application.
 ### Artificial Intelligence
 
 - **[OpenAI](https://openai.com/)** - Powers the podcast TTS generation and image creation features
-- **[AI SDK](https://sdk.vercel.ai/)** - Tools for AI feature integration
 
 ### Form Management & Validation
 
@@ -136,7 +134,7 @@ Visit [http://localhost:3000](http://localhost:3000) to explore the application.
 
 ## 🔐 Environment Variables
 
-To run this project, add the following environment variables to your `.env` file:
+Add the following environment variables to your Convex environment variables:
 
 | Variable                            | Description                                           |
 | ----------------------------------- | ----------------------------------------------------- |
