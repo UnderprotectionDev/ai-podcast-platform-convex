@@ -1,6 +1,10 @@
 <div align="center">
 
-# AI Podcast Platform Convex 🚀
+# AI Podcast Platform🚀
+
+<!-- Start Generation Here -->
+<p>A cutting-edge AI-powered podcast creation platform built with Next.js and powered by Convex's real-time backend. Generate dynamic podcasts with multiple AI voices (alloy, shimmer, nova, echo, fable, onyx) and create stunning thumbnails using DALL-E 3, all synchronized in real-time across devices.</p>
+<!-- End Generation Here -->
 
 ![Home](/public/project-image/home.png)
 
